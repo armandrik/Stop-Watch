@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop watch</title>
+    <script src="https://kit.fontawesome.com/a4e95c8d4d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../sass/style.css">
+</head>
+
+<body>
+    <div class="meta-container">
+        <div class="timer-container">
+            <div class="timer">
+                <span id="min">00</span> : <span id="sec">00</span> : <span id="tens">00</span>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="start-watch" title="start timer"><i class="fas fa-play"><br><span>START</span></i></button>
+            <button id="reset-watch" title="reset timer"><i class="fas fa-stopwatch-20"><br><span>RESET</span></i></button>
+            <button id="stop-watch" title="stop timer"><i class="fas fa-stopwatch"><br><span>STOP</span></i></button>
+            <button id="lap-watch" title="Record timer"><i class="fas fa-cut"><br><span>LAP</span></i></button>
+        </div>
+    </div>
+    <div class="ul-container">
+        <ul id="lap-list"></ul>
+    </div>
+</body>
+<script src="../JS/main.js"></script>
+
+</html>

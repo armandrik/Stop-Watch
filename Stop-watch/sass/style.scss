@@ -1,0 +1,114 @@
+$background-color: #e7e7e7;
+$border-rd: 10px;
+$text-color1: #00ffc8;
+$text-color2: #dc143ccb;
+$font-lg: 40px;
+$font-md: 20px;
+$font-family: arial;
+;
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../image/pexels-pixabay-315191.jpg);
+    background-size: cover;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.meta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: radial-gradient(ellipse at center, #104655e0 0%, #020202e3 138%);
+    width: 50%;
+    height: 30vh;
+    margin-top: 15%;
+    border-radius: $border-rd;
+    .timer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        .timer {
+            display: flex;
+            justify-content: space-evenly;
+            color: $text-color1;
+            font-size: $font-lg;
+            font-family: $font-family;
+            width: 99%;
+        }
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 8vh;
+        button {
+            width: 20%;
+            height: 8vh;
+            font-size: $font-md;
+            border: none;
+            cursor: pointer;
+            color: $text-color1;
+            background: transparent;
+            border-radius: $border-rd;
+            box-shadow: none;
+            transition: .5s;
+            &:hover {
+                box-shadow: 0 0 15px $text-color1;
+            }
+            &:active {
+                box-shadow: none;
+                color: $text-color2;
+            }
+            i {
+                span {
+                    font-family: $font-family;
+                }
+            }
+        }
+    }
+}
+
+.ul-container {
+    width: 50%;
+    height: 30vh;
+    border-radius: $border-rd;
+    font-family: $font-family;
+    margin-top: -15px;
+    .li-design {
+        display: flex;
+        align-items: center;
+        width: 103%;
+        height: 4vh;
+        background-color: $text-color2;
+        color: $text-color1;
+        border-radius: $border-rd;
+        list-style-type: none;
+        font-size: $font-md;
+        margin: 0 0 5px -6.6%;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+}
+
+::selection {
+    background-color: $background-color;
+}

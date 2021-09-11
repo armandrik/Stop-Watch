@@ -1,0 +1,113 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../image/pexels-pixabay-315191.jpg);
+  background-size: cover;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.meta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: radial-gradient(ellipse at center, #104655e0 0%, #020202e3 138%);
+  width: 50%;
+  height: 30vh;
+  margin-top: 15%;
+  border-radius: 10px;
+}
+
+.meta-container .timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.meta-container .timer-container .timer {
+  display: flex;
+  justify-content: space-evenly;
+  color: #00ffc8;
+  font-size: 40px;
+  font-family: arial;
+  width: 99%;
+}
+
+.meta-container .button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.meta-container .button-container button {
+  width: 20%;
+  height: 8vh;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  color: #00ffc8;
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: .5s;
+}
+
+.meta-container .button-container button:hover {
+  box-shadow: 0 0 15px #00ffc8;
+}
+
+.meta-container .button-container button:active {
+  box-shadow: none;
+  color: #dc143ccb;
+}
+
+.meta-container .button-container button i span {
+  font-family: arial;
+}
+
+.ul-container {
+  width: 50%;
+  height: 30vh;
+  border-radius: 10px;
+  font-family: arial;
+  margin-top: -15px;
+}
+
+.ul-container .li-design {
+  display: flex;
+  align-items: center;
+  width: 103%;
+  height: 4vh;
+  background-color: #dc143ccb;
+  color: #00ffc8;
+  border-radius: 10px;
+  list-style-type: none;
+  font-size: 20px;
+  margin: 0 0 5px -6.6%;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+::selection {
+  background-color: #e7e7e7;
+}
+/*# sourceMappingURL=style.css.map */
